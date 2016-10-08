@@ -4,11 +4,19 @@ package hw;
  * Date: 2016/10/03
  * Author: 103051060 黃雅鈴
  */
+import java.util.Scanner;
 public class hw03_103051060 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scn = new Scanner(System.in);
+		System.out.println("請輸入一正整數n: ");
+		int n = scn.nextInt();
+		int x = 1;
+		for(int i =1;i<=n;i++){
+			x=x*i;
+		}
+		System.out.println("n!為 "+x);
 	}
 
 }
